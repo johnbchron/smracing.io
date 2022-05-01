@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  include includes/header.pug
+
+  .hero
+    .hero-cover
+    .hero__content
+      h1(data-aos="fade-in", data-aos-duration="800") $tone Motherless Racing
+      h3(data-aos="fade-in", data-aos-delay="600", data-aos-duration="800") DeRace services and analytics at your fingertips.
+      //- div(data-aos="fade-in", data-aos-delay="1200", data-aos-duration="800")
+        a.btn.vr(
+          href="https://www.jpg.store/collection/ratsdao",
+          rel="noopener noreferrer",
+          target="_blank"
+        ) Join
+
+  .section
+    .section__text.welcome__spacer
+      .welcome
+        img.icon(src="/img/logo_transp.png")
+        h2 Welcome to $tone Motherless Racing
+        p $tone Motherless Racing (SMR) is the one-stop shop for the DeRace ecosystem. Our goal is offer every advantage within the game and help members connect far beyond it in other corners of the metaverse and real life. We offer a suite of services that allow you to conveniently find, race, breed, trade, or stake your NFT horses.
+
+    .section__text
+      h2 Our Services
+      .cards.vr
+        a.card.card__partner(href="/services#statistics")
+          img(src="/img/partners/stats.png")
+          h3 Statistics
+        a.card.card__partner(href="/services#assessments")
+          img(src="/img/partners/assessment.png")
+          h3 Assessments
+        a.card.card__partner(href="/services#racing")
+          img(src="/img/partners/training.png")
+          h3 24/7 Racing
+        a.card.card__partner(href="/services#staking")
+          img(src="/img/partners/staking.png")
+          h3 Staking
