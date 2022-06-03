@@ -4,14 +4,14 @@
   "description": "Repo for SMR's website at smracing.com",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "rm -rf dist && tsc && sass --style=compressed ./static/stylesheets/style.scss ./static/stylesheets/style.css",
     "start": "tsc && node ./dist/index.js",
     "watch": "tsc-watch --noClear -p tsconfig.json --onSuccess 'node dist/index.js'",
     "scss": "sass --style=compressed ./static/stylesheets/style.scss ./static/stylesheets/style.css --watch",
     "prettier": "prettier --write package.json tsconfig.json src/*.ts src/**/*.ts views/*.pug"
   },
   "engines": {
-    "node": "^16.14.1"
+    "node": ">= 16.14.1"
   },
   "keywords": [],
   "author": "",
