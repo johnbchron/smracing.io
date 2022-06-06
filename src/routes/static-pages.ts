@@ -26,6 +26,12 @@ export function init() {
     });
   });
 
+  router.get("/academy", async (ctx) => {
+    ctx.render("academy.pug", {
+      title: "Academy | SMR"
+    });
+  });
+
   // router.get("/gallery", async (ctx) => {
   //   return ctx.redirect("/projects");
   // });
